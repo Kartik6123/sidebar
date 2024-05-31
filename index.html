@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+<body>
+    <div class="bar"> 
+        <div class="top">
+            <div class="logo">
+                <i class="bx bxl-codepen" ></i>
+                Code 
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <div class="user">
+           <img src="p.jpg" alt="me" class="img">
+           <div>
+            <p class="p">ClientB.</p>
+            <p class="p">Admin</p>
+           </div>
+        </div>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-shopping-bag"></i>
+                    <span class="nav">Products</span>
+                </a>
+                
+                <span class="tooltip">Products</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-list-check"></i>
+                    <span class="nav">Categories</span>
+                </a>
+                
+                <span class="tooltip">Categories</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-food-menu"></i>
+                    <span class="nav">Orders</span>
+                </a>
+                
+                <span class="tooltip">Orders</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-body"></i>
+                    <span class="nav">Customers</span>
+                </a>
+               
+                <span class="tooltip">Customers</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-location-plus"></i>
+                    <span class="nav">Shipping</span>
+
+                </a>
+                <span class="tooltip">Shipping</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx bx-cog"></i>
+                    <span class="nav">Setting</span>
+                </a>
+                
+                <span class="tooltip">Setting</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-log-out"></i>
+                    <span class="nav">LogOut</span>
+                </a>
+                
+                <span class="tooltip">LogOut</span>
+            </li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="m"> <h1 >CODECOMMERCE</h1></div>
+    </div>
+</body>
+<script>
+
+    let btn=document.querySelector("#btn");
+    let bar=document.querySelector(".bar");
+    btn.onclick=()=>{
+        bar.classList.toggle('active')
+    }
+</script>
+</html>
